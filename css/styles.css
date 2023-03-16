@@ -278,7 +278,6 @@ header {
     display:flex;
     flex-direction: column;
     gap: 72px;
-    align-items: center;
 }
 
 
@@ -292,6 +291,13 @@ header {
     }
 
 }
+
+@media (min-width: 768px) and (max-width: 1199px){
+    .footer-form {
+        margin-top: 48px;
+        }
+}
+
 
 @media (min-width: 1200px) {
     .footer-container {
@@ -314,12 +320,21 @@ footer .logo-decorate {
 
 footer {
     background-color: var(--headings-color);
-    padding: 100px 0;
+    padding: 96px 0;
+    text-align: center;
+}
+
+@media (min-width: 768px){
+    footer {
+        text-align: left;
+        padding: 100px 0;
+        }
 }
 
 .footer-info {
     color: var(--accent-color);
     max-width: 264px;
+    text-align: left;
 }
 
 
@@ -336,20 +351,35 @@ footer {
 
 .footer-form-field{
     display:flex;
-    gap:24px;
+    flex-direction: column;
+    gap:16px;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .footer-form-field {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        }
 }
 
 .footer-form-input{
     padding-left: 16px ;
     background-color: var(--headings-color);
     color: var(--inverted-text-color);
-    width:264px;
+    width:346px;
     height:40px;
     border: 1px solid var(--inverted-text-color);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
 }
 
+@media (min-width: 768px) {
+    .footer-form-input {
+        width:264px;
+    }
+}
 .footer-form-input::placeholder{
     color:var(--inverted-text-color);
     padding:8px 0 8px 0;
@@ -361,6 +391,7 @@ footer {
     align-items: center;
     padding: 8px 24px;
     gap: 16px;
+    width: 165px;
     background-color: var(--primary-brand-color);
     color:var(--inverted-text-color);
     border: none;
@@ -727,13 +758,13 @@ footer {
 .portfolio-filter-menu{
     display:flex;
     gap:24px; 
-    justify-content: center;
     flex-wrap: wrap;
 }
 
 @media (min-width: 768px) {
         .portfolio-filter-menu{
         flex-wrap: nowrap;
+        justify-content: center;
     }
 }
 
