@@ -168,7 +168,7 @@ header {
     padding: 0;
 }
 
-.mobile-menu .socials-list{
+.mobile-menu-thumb .socials-list{
     gap:56px;
 }
 
@@ -197,6 +197,9 @@ header {
         line-height: 1.2;
         font-weight: 500;
     }
+    .mobile-menu-thumb .socials-list {
+        gap: 24px;
+        }
 }
 
 
@@ -1181,7 +1184,7 @@ footer {
     cursor: pointer;
     color: var(--light-slate-color);
     font-size: 12px;
-    line-height: 1.16px;
+    line-height: 1.16;
     letter-spacing: 0.04em;
     padding-left: 24px;
 }
