@@ -117,10 +117,8 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    bottom: 0;
     overflow: auto;
     width: 100%;
-    max-height: 796px;
     height: 100%;
     background-color: var(--inverted-text-color);
     transform: translateY(-100%);
@@ -175,6 +173,13 @@ header {
     color: #434455;
 }
 
+.address-link.mobile-focus{
+    color:var(--primary-brand-color);
+}
+
+.navigation-link.mobile-focus{
+    color: var(--pressed-state-color);
+}
 
 /* Header-desktop */
 
@@ -847,6 +852,7 @@ footer {
     .portfolio-filter-list{
         flex-direction: row;
         gap: 24px;
+        grid-row-gap: 72px;
     }
     .portfolio-project-item {
         flex-basis: calc((100% - 24px) / 2);
@@ -854,9 +860,13 @@ footer {
 }
 
 @media (min-width: 1200px) {
+
     .portfolio-project-item {
         flex-basis: calc((100% - 48px) / 3);
         }
+    .portfolio-filter-list {
+        grid-row-gap: 48px;
+    }
 }
 
 .portfolio-filter-btn{
